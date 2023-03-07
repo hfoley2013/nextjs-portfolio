@@ -4,7 +4,7 @@ import { faEnvelope as faEnvelopeSolid } from '@fortawesome/free-solid-svg-icons
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 fixed bottom-0 left-0 w-full justify-around">
+    <footer className="bg-gray-900 w-full justify-around">
       <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center">

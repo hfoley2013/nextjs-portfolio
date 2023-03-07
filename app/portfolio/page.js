@@ -137,13 +137,13 @@ export default function Portfolio() {
   const sectionName = "Projects";
 
   const projects = portfolio.map((project) => (
-    <div key={project.title} className="w-full sm:w-1/2 md:w-1/3 px-4 mb-4">
-      <div className="">
+    <div key={project.title} className="flex flex-col w-full bg-gray-400 sm:w-1/2 md:w-1/3 p-4 mx-4 mb-4">
+      <div className="h-30">
         <Image
           src={project.images[0]}
           alt="projectImages"
-          height={230}
-          width={200}
+          height={300}
+          width={300}
         />
       </div>
       <div className="bg-white rounded-lg shadow-lg p-4">
@@ -151,7 +151,6 @@ export default function Portfolio() {
           {project.startDate}
         </div>
         <h3 className="text-xl text-center font-bold mb-2">{project.title}</h3>
-        {/* Add other project details here */}
       </div>
     </div>
   ));
@@ -159,7 +158,7 @@ export default function Portfolio() {
   return (
     <div className="container mx-auto px-4">
     <h2 className="text-3xl text-gray-300 text-center font-bold mb-4">{sectionName}</h2>
-    <div className="flex flex-wrap -mx-4">
+    <div className="flex items-center justify-space-between -mx-4">
       {projects}
     </div>
   </div>
