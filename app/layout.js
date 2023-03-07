@@ -16,9 +16,11 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
       </head>
       <body className='bg-gray-900'>
-        <div className='flex flex-col'>
-          <Header />
-          {children}
+        <div className="flex flex-col min-h-screen">
+          <div className='flex-grow'>
+            <Header />
+            {children}
+          </div>
           <Footer />
         </div>
       </body>
