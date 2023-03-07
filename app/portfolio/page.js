@@ -137,41 +137,31 @@ export default function Portfolio() {
   const sectionName = "Projects";
 
   const projects = portfolio.map((project) => (
-    <div
-      className="col-sm-12 col-md-6 col-lg-4 cursor-pointer"
-      key={project.title}
-      onClick={() => handleDetailsModalShow(project)}
-    >
-      <div className="portfolio-item d-block">
-        <div className="foto">
-          <div>
-            <Image
-              src={project.images[0]}
-              alt="projectImages"
-              height={230}
-              width={200}
-              style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }}
-            />
-            <span className="project-date">{project.startDate}</span>
-            <br />
-            <p className="project-title-settings mt-3">{project.title}</p>
-          </div>
+    <div key={project.title} className="w-full sm:w-1/2 md:w-1/3 px-4 mb-4">
+      <div className="">
+        <Image
+          src={project.images[0]}
+          alt="projectImages"
+          height={230}
+          width={200}
+        />
+      </div>
+      <div className="bg-white rounded-lg shadow-lg p-4">
+        <div className="bg-gray-200 text-gray-800 text-center rounded-full py-2 px-4 mb-2">
+          {project.startDate}
         </div>
+        <h3 className="text-xl text-center font-bold mb-2">{project.title}</h3>
+        {/* Add other project details here */}
       </div>
     </div>
   ));
 
   return (
-    <section id="portfolio">
-      <div className="col-md-12">
-        <h1 className="section-title text-black">
-          <span>{sectionName}</span>
-        </h1>
-        <div className="col-md-12 mx-auto">
-          <div className="flex flex-col mx-auto">{projects}</div>
-        </div>
-        <ProjectDetails show={detailsModalShow} onHide={handleDetailsModalClose} projects={portfolio} />
-      </div>
-    </section>
+    <div className="container mx-auto px-4">
+    <h2 className="text-3xl text-gray-300 text-center font-bold mb-4">{sectionName}</h2>
+    <div className="flex flex-wrap -mx-4">
+      {projects}
+    </div>
+  </div>
   );
 };
