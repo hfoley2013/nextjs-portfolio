@@ -1,6 +1,6 @@
 'use client';
 import React, {useState} from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import ProjectDetails from './ProjectDetails.js';
 
 const portfolio = [
@@ -22,7 +22,7 @@ const portfolio = [
       },
       {
         "class": "devicon-django-plain",
-        "name": "Django (DRF)"
+        "name": "Django"
       },
       {
         "class": "devicon-nextjs-original",
@@ -137,20 +137,26 @@ export default function Portfolio() {
   const sectionName = "Projects";
 
   const projects = portfolio.map((project) => (
-    <div key={project.title} className="flex flex-col w-full bg-gray-400 sm:w-1/2 md:w-1/3 p-4 mx-4 mb-4">
-      <div className="h-30">
-        <Image
-          src={project.images[0]}
-          alt="projectImages"
-          height={300}
-          width={300}
-        />
+    <div key={project.title} className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 m-5">
+      <a href={project.url} target="_blank"><img className="w-full h-96 object-contain p-1" src={project.images[0]} alt={project.title} /></a>
+      <div className="px-6 py-4 text-center">
+        <a href={project.url} className="font-bold text-xl mb-2">{project.title}</a>
+        <p className="text-gray-800 text-base">
+          {project.description}
+        </p>
       </div>
-      <div className="bg-white rounded-lg shadow-lg p-4">
-        <div className="bg-gray-200 text-gray-800 text-center rounded-full py-2 px-4 mb-2">
-          {project.startDate}
-        </div>
-        <h3 className="text-xl text-center font-bold mb-2">{project.title}</h3>
+      <div className="px-6 pt-4 pb-2 flex flex-wrap justify-center">
+        {project.technologies.map((tech) => (
+          <span key={tech.name} className="inline-block bg-gray-200 rounded-full px-3 py-3 text-4xl font-semibold text-gray-800 mx-1 my-1">
+            <div key={tech.name} className="justify-center px-2 text-6xl sm:text-4xl">
+              <i className={tech.class}>
+                <div className="text-center">
+                  <p className="text-gray-800 text-xl mt-0 sm:text-sm">{tech.name}</p>
+                </div>
+              </i>
+            </div>
+          </span>
+        ))}
       </div>
     </div>
   ));
@@ -158,7 +164,7 @@ export default function Portfolio() {
   return (
     <div className="container mx-auto px-4">
     <h2 className="text-3xl text-gray-300 text-center font-bold mb-4">{sectionName}</h2>
-    <div className="flex items-center justify-space-between -mx-4">
+    <div className="flex flex-wrap justify-center">
       {projects}
     </div>
   </div>
