@@ -44,18 +44,17 @@ const devicons = [
 
 export default function Devicons() {
   return (
-    <div className="flex items-center justify-center h-4/5">
-      <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6">
-        {devicons.map((devicon) => (
-          <div key={devicon.name} className="px-2 justify-center text-6xl sm:text-4xl">
-            <i className={devicon.class}>
-              <div className="flex flex-col items-center justify-center">
-                <p className="text-gray-300 text-center text-xl mt-0 sm:text-sm">{devicon.name}</p>
-              </div>
-            </i>
+    <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6">
+      {devicons.map((devicon) => (
+        <div key={devicon.name} className="flex flex-col justify-center items-center px-2 text-4xl sm:text-6xl">
+          <div className="flex flex-col justify-center items-center">
+            <i className={devicon.class}></i>
+            <div className="justify-center">
+              <p className="text-gray-300 text-center text-sm mt-0 sm:text-xl mx-2">{devicon.name}</p>
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
