@@ -9,10 +9,10 @@ const portfolio = [
     "startDate": "2023",
     "description": "A web application that allows users to view an interactive Air Quality Index (AQI) heatmap of the United States and receive SMS alerts for areas of interest.",
     "images": [
+      "/img/portfolio/cleanaircompass/cac_demo.gif",
       "/img/portfolio/cleanaircompass/cac_home.png",
       "/img/portfolio/cleanaircompass/cac_heatmap.png",
-      "/img/portfolio/cleanaircompass/cac_modal.png",
-      "/img/portfolio/cleanaircompass/cac_demo.gif"
+      "/img/portfolio/cleanaircompass/cac_modal.png"
     ],
     "url": "https://clean-air-compass-mzvbj.ondigitalocean.app/",
     "technologies": [
@@ -138,8 +138,10 @@ export default function Portfolio() {
 
   const projects = portfolio.map((project) => (
     <div key={project.title} className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 m-5">
-      <a href={project.url} target="_blank"><img className="w-full h-96 object-contain p-1" src={project.images[0]} alt={project.title} /></a>
-      <div className="px-6 py-4 text-center">
+      <a href={project.url} target="_blank">
+        <img className="w-full h-96 object-contain p-1" src={project.images[0]} alt={project.title} />
+      </a>
+      <div className="px-6 text-center">
         <a href={project.url} className="font-bold text-xl mb-2">{project.title}</a>
         <p className="text-gray-800 text-base">
           {project.description}
@@ -147,13 +149,12 @@ export default function Portfolio() {
       </div>
       <div className="px-6 pt-4 pb-2 flex flex-wrap justify-center">
         {project.technologies.map((tech) => (
-          <span key={tech.name} className="inline-block bg-gray-200 rounded-full px-3 py-3 text-4xl font-semibold text-gray-800 mx-1 my-1">
-            <div key={tech.name} className="justify-center px-2 text-6xl sm:text-4xl">
-              <i className={tech.class}>
-                <div className="text-center">
-                  <p className="text-gray-800 text-xl mt-0 sm:text-sm">{tech.name}</p>
+          <span key={tech.name} className="inline-block bg-gray-200 rounded-full px-4 py-4 text-2xl sm:text-4xl font-semibold text-gray-800 mx-1 my-1">
+            <div key={tech.name} className="flex flex-col justify-center items-center px-2 text-xl sm:text-2xl">
+              <i className={`${tech.class} text-4xl sm:text-6xl`}></i>
+                <div className="justify-center">
+                  <p className="text-gray-800 mt-0">{tech.name}</p>
                 </div>
-              </i>
             </div>
           </span>
         ))}
@@ -163,7 +164,7 @@ export default function Portfolio() {
 
   return (
     <div className="container mx-auto px-4">
-    <h2 className="text-3xl text-gray-300 text-center font-bold mb-4">{sectionName}</h2>
+    <h2 className="text-2xl sm:text-4xl text-gray-300 text-center font-bold mb-4">{sectionName}</h2>
     <div className="flex flex-wrap justify-center">
       {projects}
     </div>
