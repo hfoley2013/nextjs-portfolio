@@ -4,13 +4,17 @@ export default function About() {
 
   const profilePhoto = "/img/profile_img.jpg"
   const tagLine = "Bombs -> Banking -> Backend"
-  const about = "My name is Harper Foley and I am a full-stack software developer with a background in tech investment banking and Navy Special Operations. I spent eight years leading elite teams of bomb technicians across the globe in extremely fast-paced and ambiguous environments with a 100% mission success rate. After transitioning from the military in 2021, I broke into investment banking as a financial analyst specializing in Tech M&A and advised on 10 projects valued at ~$3.5 billion. I decided to move into software development because after learning some basic VBA and Python coding to eliminate a series of manual processes at work, I realized that I really enjoyed designing software programs and loved being the creator of tools that solved real world problems. I am currently working on a project, Rainier Racing Co., to build the “Robinhood” of Play-To-Earn Gaming that gives Web3 gamers access to the financial market data they need to make informed purchases of gaming NFTs. You should bring me onboard because I can uniquely bridge the gap between your product, engineering, and business teams by leveraging my leadership, finance, and coding experience to help build amazing products that your customers will love."
+  const about1 = "My name is Harper Foley and I am a full-stack software developer with a background in tech investment banking and Navy Special Operations. I spent eight years leading elite teams of bomb technicians across the globe in extremely fast-paced and ambiguous environments with a 100% mission success rate."
+  const about2 = "After transitioning from the military in 2021, I broke into investment banking as a financial analyst specializing in Tech M&A and advised on 10 projects valued at ~$3.5 billion."
+  const about3 = "I decided to move into software development because after learning some basic VBA and Python coding to eliminate a series of manual processes at work, I realized that I really enjoyed designing software programs and loved being the creator of tools that solved real world problems."
+  const about4 = "I am currently working on a project, Rainier Racing Co., to build the “Robinhood” of Play-To-Earn Gaming that gives Web3 gamers access to the financial market data they need to make informed purchases of gaming NFTs."
+  const about5 = " You should bring me onboard because I can uniquely bridge the gap between your product, engineering, and business teams by leveraging my leadership, finance, and coding experience to help build amazing products that your customers will love."
 
   return (
     <>
       <h1 className="text-2xl text-gray-300 mb-2 text-center sm:text-4xl">{tagLine}</h1>
       <div className="flex flex-col md:flex-row mx-auto">
-      <span className="order-1 bg-slate-200 inline-block mt-3 sm:mt-5 mx-2 sm:mx-auto mb-4 sm:mb-8 pt-3.5 px-3.5 pb-7 text-center relative">
+      <span className="order-1 bg-slate-200 inline-block mt-3 sm:mt-5 mx-2 sm:mx-auto mb-4 sm:mb-5 p-1.5 text-center relative">
         <Image
           className="block"
           src={profilePhoto}
@@ -21,7 +25,7 @@ export default function About() {
         />
         <p className="text-black font-bold text-lg my-auto">Harper Foley</p>
       </span>
-        <div className="order-2 bg-black text-white font-mono p-4 mt-3 sm:mt-5 mb-4 sm:mb-8 mx-2 sm:mx-auto rounded-lg w-full md:w-1/2">
+        <div className="order-2 bg-black text-white font-mono p-4 mt-3 sm:mt-5 mb-4 sm:mb-5 mx-2 sm:mx-auto rounded-lg w-full md:w-1/2">
           <div className="flex">
             <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
             <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
@@ -31,7 +35,11 @@ export default function About() {
             <span className="text-green-500">guest@localhost:</span>
             <span className="text-blue-500">~</span>
             <span className="text-white">$</span>
-            <span className="mx-2 text-sm">{about}</span>
+            <span className="mx-2 text-sm">{about1}</span><br/><br/>
+            <span className="mx-2 text-sm">{about2}</span><br/><br/>
+            <span className="mx-2 text-sm">{about3}</span><br/><br/>
+            <span className="mx-2 text-sm">{about4}</span><br/><br/>
+            <span className="mx-2 text-sm">{about5}</span>
           </div>
         </div>
       </div>

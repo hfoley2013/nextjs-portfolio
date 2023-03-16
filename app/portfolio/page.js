@@ -137,21 +137,21 @@ export default function Portfolio() {
   const sectionName = "Projects";
 
   const projects = portfolio.map((project) => (
-    <div key={project.title} className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 m-5">
+    <div key={project.title} className="max-w-lg text-center rounded overflow-hidden shadow-lg bg-gray-400 m-5">
+      <a href={project.url} className="font-bold text-2xl sm:text-3xl hover:text-gray-900/[0.7]">{project.title}</a>
       <a href={project.url} target="_blank">
-        <img className="w-full h-96 object-contain p-1" src={project.images[0]} alt={project.title} />
+        <img className="w-full h-96 object-contain p-3" src={project.images[0]} alt={project.title} />
       </a>
-      <div className="px-6 text-center">
-        <a href={project.url} className="font-bold text-xl mb-2">{project.title}</a>
-        <p className="text-gray-800 text-base">
+      <div className="px-6">
+        <p className="text-gray-800 text-lg sm:text-xl">
           {project.description}
         </p>
       </div>
       <div className="px-6 pt-4 pb-2 flex flex-wrap justify-center">
         {project.technologies.map((tech) => (
           <span key={tech.name} className="inline-block bg-gray-200 rounded-full px-4 py-4 text-2xl sm:text-4xl font-semibold text-gray-800 mx-1 my-1">
-            <div key={tech.name} className="flex flex-col justify-center items-center px-2 text-xl sm:text-2xl">
-              <i className={`${tech.class} text-4xl sm:text-6xl`}></i>
+            <div key={tech.name} className="flex flex-col justify-center items-center px-2 text-lg sm:text-xl">
+              <i className={`${tech.class} text-2xl sm:text-4xl`}></i>
                 <div className="justify-center">
                   <p className="text-gray-800 mt-0">{tech.name}</p>
                 </div>
