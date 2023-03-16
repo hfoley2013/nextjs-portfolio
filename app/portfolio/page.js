@@ -164,7 +164,7 @@ export default function Portfolio() {
 
   return (
     <div className="container mx-auto px-4">
-    <h2 className="text-2xl sm:text-4xl text-gray-300 text-center font-bold mb-4">{sectionName}</h2>
+    <h2 className="text-2xl sm:text-4xl text-gray-300 text-center font-bold pt-4 mb-4">{sectionName}</h2>
     <div className="flex flex-wrap justify-center">
       {projects}
     </div>

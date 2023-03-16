@@ -3,8 +3,8 @@ import Devicons from './Devicons.js';
 export default function Home() {
   return (
     <>
-      <section className="bg-gray-900 h-full max-w-screen mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center">
+      <section className="bg-gray-900 h-full max-w-screen mx-auto px-4 pt-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center sm:pt-4">
           <div className="justify-center mx-1 sm:pr-6">
             <h1 className="text-2xl sm:text-xl font-bold leading-tight text-teal-600 mb-1">Hi, my name is</h1>
             <h2 className="text-5xl sm:text-7xl font-bold leading-tight text-white mb-2">Harper Foley</h2>

@@ -12,36 +12,36 @@ export default function About() {
 
   return (
     <>
-      <h1 className="text-2xl text-gray-300 mb-2 text-center sm:text-4xl">{tagLine}</h1>
-      <div className="flex flex-col md:flex-row mx-auto">
-      <span className="order-1 bg-slate-200 inline-block mt-3 sm:mt-5 mx-2 sm:mx-auto mb-4 sm:mb-5 p-1.5 text-center relative">
-        <Image
-          className="block"
-          src={profilePhoto}
-          height={500}
-          width={400}
-          alt="Profile Photo"
-          priority
-        />
-        <p className="text-black font-bold text-lg my-auto">Harper Foley</p>
-      </span>
-        <div className="order-2 bg-black text-white font-mono p-4 mt-3 sm:mt-5 mb-4 sm:mb-5 mx-2 sm:mx-auto rounded-lg w-full md:w-1/2">
-          <div className="flex">
-            <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
-            <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
-            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+      <h1 className="text-2xl text-gray-300 font-bold pt-4 mb-2 text-center sm:text-4xl">{tagLine}</h1>
+      <div className="flex flex-col sm:flex-row justify-center">
+        <span className="order-1 bg-slate-200 inline-block mt-3 mx-2 sm:mt-5 sm:mx-auto mb-4 p-1.5 text-center">
+          <Image
+            className="block"
+            src={profilePhoto}
+            height={500}
+            width={400}
+            alt="Profile Photo"
+            priority
+          />
+          <p className="text-black font-bold text-lg my-auto">Harper Foley</p>
+        </span>
+          <div className="order-2 bg-black text-white font-mono p-4 mt-3 sm:mt-5 mb-4 sm:mb-5 mx-2 sm:mx-auto rounded-lg w-full md:w-1/2">
+            <div className="flex">
+              <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+              <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div className="my-4 sm:text-xs">
+              <span className="text-green-500">guest@localhost:</span>
+              <span className="text-blue-500">~</span>
+              <span className="text-white">$</span>
+              <span className="mx-2 text-sm">{about1}</span><br/><br/>
+              <span className="mx-2 text-sm">{about2}</span><br/><br/>
+              <span className="mx-2 text-sm">{about3}</span><br/><br/>
+              <span className="mx-2 text-sm">{about4}</span><br/><br/>
+              <span className="mx-2 text-sm">{about5}</span>
+            </div>
           </div>
-          <div className="my-4 sm:text-xs">
-            <span className="text-green-500">guest@localhost:</span>
-            <span className="text-blue-500">~</span>
-            <span className="text-white">$</span>
-            <span className="mx-2 text-sm">{about1}</span><br/><br/>
-            <span className="mx-2 text-sm">{about2}</span><br/><br/>
-            <span className="mx-2 text-sm">{about3}</span><br/><br/>
-            <span className="mx-2 text-sm">{about4}</span><br/><br/>
-            <span className="mx-2 text-sm">{about5}</span>
-          </div>
-        </div>
       </div>
     </>
   );
