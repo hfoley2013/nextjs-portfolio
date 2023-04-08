@@ -12,8 +12,8 @@ export default function About() {
 
   return (
     <>
-      <h1 className="text-2xl text-gray-300 font-bold pt-4 mb-2 text-center sm:text-4xl">{tagLine}</h1>
-      <div className="flex flex-col sm:flex-row justify-center">
+      <h1 className="pt-4 mb-2 text-2xl font-bold text-center text-gray-300 sm:text-4xl">{tagLine}</h1>
+      <div className="flex flex-col justify-center sm:flex-row">
         <span className="order-1 bg-slate-200 inline-block mt-3 mx-2 sm:mt-5 sm:mx-auto mb-4 p-1.5 text-center">
           <Image
             className="block"
@@ -23,12 +23,12 @@ export default function About() {
             alt="Profile Photo"
             priority
           />
-          <p className="text-black font-bold text-lg my-auto">Harper Foley</p>
+          <p className="my-auto text-lg font-bold text-black">Harper Foley</p>
         </span>
-          <div className="order-2 bg-black text-white font-mono p-4 mt-3 sm:mt-5 mb-4 sm:mb-5 mx-2 sm:mx-auto rounded-lg w-full md:w-1/2">
+          <div className="order-2 w-full p-4 mx-2 mt-3 mb-4 font-mono text-white bg-black rounded-lg sm:mt-5 sm:mb-5 sm:mx-auto md:w-1/2">
             <div className="flex">
-              <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+              <div className="w-3 h-3 mr-2 bg-red-500 rounded-full"></div>
+              <div className="w-3 h-3 mr-2 bg-yellow-500 rounded-full"></div>
               <div className="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
             <div className="my-4 sm:text-xs">

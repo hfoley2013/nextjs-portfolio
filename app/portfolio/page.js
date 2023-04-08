@@ -137,23 +137,23 @@ export default function Portfolio() {
   const sectionName = "Projects";
 
   const projects = portfolio.map((project) => (
-    <div key={project.title} className="max-w-lg text-center rounded overflow-hidden shadow-lg bg-gray-400 m-5">
+    <div key={project.title} className="max-w-lg m-5 overflow-hidden text-center bg-gray-400 rounded shadow-lg">
       <a href={project.url} className="font-bold text-2xl sm:text-3xl hover:text-gray-900/[0.7]">{project.title}</a>
       <a href={project.url} target="_blank">
-        <img className="w-full h-96 object-contain p-3" src={project.images[0]} alt={project.title} />
+        <img className="object-contain w-full p-3 h-96" src={project.images[0]} alt={project.title} />
       </a>
       <div className="px-6">
-        <p className="text-gray-800 text-lg sm:text-xl">
+        <p className="text-lg text-gray-800 sm:text-xl">
           {project.description}
         </p>
       </div>
-      <div className="px-6 pt-4 pb-2 flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center px-6 pt-4 pb-2">
         {project.technologies.map((tech) => (
-          <span key={tech.name} className="inline-block bg-gray-200 rounded-full px-4 py-4 text-2xl sm:text-4xl font-semibold text-gray-800 mx-1 my-1">
-            <div key={tech.name} className="flex flex-col justify-center items-center px-2 text-lg sm:text-xl">
+          <span key={tech.name} className="inline-block px-4 py-4 mx-1 my-1 text-2xl font-semibold text-gray-800 bg-gray-200 rounded-full sm:text-4xl">
+            <div key={tech.name} className="flex flex-col items-center justify-center px-2 text-lg sm:text-xl">
               <i className={`${tech.class} text-2xl sm:text-4xl`}></i>
                 <div className="justify-center">
-                  <p className="text-gray-800 mt-0">{tech.name}</p>
+                  <p className="mt-0 text-gray-800">{tech.name}</p>
                 </div>
             </div>
           </span>
@@ -163,8 +163,8 @@ export default function Portfolio() {
   ));
 
   return (
-    <div className="container mx-auto px-4">
-    <h2 className="text-2xl sm:text-4xl text-gray-300 text-center font-bold pt-4 mb-4">{sectionName}</h2>
+    <div className="container px-4 mx-auto">
+    <h2 className="pt-4 mb-4 text-2xl font-bold text-center text-gray-300 sm:text-4xl">{sectionName}</h2>
     <div className="flex flex-wrap justify-center">
       {projects}
     </div>

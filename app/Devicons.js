@@ -22,7 +22,7 @@ const devicons = [
   },
   {
     "name": "Django",
-    "class": "devicon-django-plain colored",
+    "class": "devicon-django-plain",
   },
   {
     "name": "MongoDB",
@@ -46,11 +46,11 @@ export default function Devicons() {
   return (
     <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6">
       {devicons.map((devicon) => (
-        <div key={devicon.name} className="flex flex-col justify-center items-center px-2 text-4xl sm:text-6xl">
-          <div className="flex flex-col justify-center items-center">
-            <i className={devicon.class}></i>
+        <div key={devicon.name} className="flex flex-col items-center justify-center px-2 text-4xl sm:text-6xl">
+          <div className="flex flex-col items-center justify-center">
+            <i className={devicon.class} style={devicon.name === "Next.js" || devicon.name === "Django" ? {color: "#F8F8F8"} : {}}></i>
             <div className="justify-center">
-              <p className="text-gray-300 text-center text-sm mt-0 sm:text-xl mx-2">{devicon.name}</p>
+              <p className="mx-2 mt-0 text-sm text-center text-gray-300 sm:text-xl">{devicon.name}</p>
             </div>
           </div>
         </div>
