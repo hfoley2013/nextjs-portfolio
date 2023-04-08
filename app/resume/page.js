@@ -1,10 +1,10 @@
 export default function Resume() {
   return(
     <>
-      <article className="mx-auto flex flex-col items-center px-2 py-4 rounded-lg shadow-lg">
-        <h2 className="text-2xl sm:text-4xl text-gray-200 font-bold mb-4">My Resume</h2>
-        <div className="bg-gray-300 rounded-lg w-full sm:w-2/3">
-          <embed src="/Resume.pdf" scale="90" className="mx-auto w-full h-screen"/>
+      <article className="flex flex-col items-center px-2 py-4 mx-auto rounded-lg shadow-lg">
+        <h2 className="mb-4 text-2xl font-bold text-gray-200 sm:text-4xl">My Resume</h2>
+        <div className="w-full bg-gray-300 rounded-lg sm:w-2/3">
+          <embed src="/Resume.pdf#zoom=90" className="w-full h-screen mx-auto"/>
         </div>
       </article>
     </>

@@ -1,8 +1,8 @@
 export default function Loading() {
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-white">
+    <div className="fixed top-0 left-0 flex items-center justify-center w-screen h-screen bg-gray-900">
     <div className="flex items-center justify-center">
-      <svg className="animate-spin mr-3 h-10 w-10 text-gray-500" viewBox="0 0 24 24">
+      <svg className="w-10 h-10 mr-3 text-gray-500 animate-spin" viewBox="0 0 24 24">
         <path
           fill="none"
           stroke="currentColor"
@@ -12,7 +12,7 @@ export default function Loading() {
           d="M2 12c0-6.627 5.373-12 12-12s12 5.373 12 12-5.373 12-12 12-12-5.373-12-12"
         />
       </svg>
-      <span className="text-gray-500 text-xl font-semibold">Loading...</span>
+      <span className="text-xl font-semibold text-gray-500">Loading...</span>
     </div>
   </div>
   );
