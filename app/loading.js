@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="fixed top-0 left-0 flex items-center justify-center w-screen h-screen bg-white">
+    <div className="fixed top-0 left-0 flex items-center justify-center w-screen h-screen bg-gray-900">
     <div className="flex items-center justify-center">
       <svg className="w-10 h-10 mr-3 text-gray-500 animate-spin" viewBox="0 0 24 24">
         <path
