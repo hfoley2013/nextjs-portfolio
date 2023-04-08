@@ -1,7 +1,4 @@
-'use client';
 import React, {useState} from 'react';
-// import Image from 'next/image';
-import ProjectDetails from './ProjectDetails.js';
 
 const portfolio = [
   {
@@ -124,16 +121,6 @@ const portfolio = [
 ]
 
 export default function Portfolio() {
-  const [detailsModalShow, setDetailsModalShow] = useState(false);
-  const [deps, setDeps] = useState({});
-
-  const handleDetailsModalShow = (data) => {
-    setDetailsModalShow(true);
-    setDeps(data);
-  };
-
-  const handleDetailsModalClose = () => setDetailsModalShow(false);
-
   const sectionName = "Projects";
 
   const projects = portfolio.map((project) => (
