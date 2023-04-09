@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const portfolio = [
   {
@@ -127,7 +128,7 @@ export default function Portfolio() {
     <div key={project.title} className="max-w-lg m-5 overflow-hidden text-center bg-gray-400 rounded shadow-lg">
       <a href={project.url} className="font-bold text-2xl sm:text-3xl hover:text-gray-900/[0.7]">{project.title}</a>
       <a href={project.url} target="_blank">
-        <img className="object-contain w-full p-3 h-96" src={project.images[0]} alt={project.title} />
+        <Image className="object-contain w-full p-3 h-96" src={project.images[0]} alt={project.title} width={488} height={360}/>
       </a>
       <div className="px-6">
         <p className="text-lg text-gray-800 sm:text-xl">
