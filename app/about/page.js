@@ -8,7 +8,7 @@ export default function About() {
   const about2 = "After transitioning from the military in 2021, I broke into investment banking as a financial analyst specializing in Tech M&A and advised on 10 projects valued at ~$3.5 billion."
   const about3 = "I decided to move into software development because after learning some basic VBA and Python coding to eliminate a series of manual processes at work, I realized that I really enjoyed designing software programs and loved being the creator of tools that solved real world problems."
   const about4 = "I am currently working on a project, Rainier Racing Co., to build the “Robinhood” of Play-To-Earn Gaming that gives Web3 gamers access to the financial market data they need to make informed purchases of gaming NFTs."
-  const about5 = " You should bring me onboard because I can uniquely bridge the gap between your product, engineering, and business teams by leveraging my leadership, finance, and coding experience to help build amazing products that your customers will love."
+  const about5 = "You should bring me onboard because I can uniquely bridge the gap between your product, engineering, and business teams by leveraging my leadership, finance, and coding experience to help build amazing products that your customers will love."
 
   return (
     <>
@@ -32,7 +32,7 @@ export default function About() {
               <div className="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
             <div className="my-4 sm:text-xs">
-              <span className="text-green-500">guest@localhost:</span>
+              <span className="text-green-500">EOD@navy2013:</span>
               <span className="text-blue-500">~</span>
               <span className="text-white">$</span>
               <span className="mx-2 text-sm">{about1}</span><br/><br/>

@@ -9,6 +9,10 @@ const devicons = [
     "class": "devicon-javascript-plain colored",
   },
   {
+    "name": "TypeScript",
+    "class": "devicon-typescript-plain colored",
+  },
+  {
     "name": "Node.js",
     "class": "devicon-nodejs-plain colored",
   },
@@ -39,6 +43,10 @@ const devicons = [
   {
     "name": "Docker",
     "class": "devicon-docker-plain colored",
+  },
+  {
+    "name": "AWS",
+    "class": "devicon-amazonwebservices-original colored",
   }
 ];
 
