@@ -12,7 +12,7 @@ const portfolio = [
       "/img/portfolio/cleanaircompass/cac_heatmap.png",
       "/img/portfolio/cleanaircompass/cac_modal.png"
     ],
-    "url": "https://clean-air-compass-mzvbj.ondigitalocean.app/",
+    "url": "https://clean-air-compass.vercel.app/",
     "technologies": [
       {
         "class": "devicon-python-plain",
