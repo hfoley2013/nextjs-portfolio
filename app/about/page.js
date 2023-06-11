@@ -4,6 +4,7 @@ export default function About() {
 
   const profilePhoto = "/img/profile_img.jpg"
   const tagLine = "Bombs -> Banking -> Backend"
+  const tagLine2 = "Fusing high-stakes leadership, financial acumen, and engineering proficiency to drive breakthrough innovation"
   const about1 = "My name is Harper Foley and I am a full-stack software developer with a background in tech investment banking and Navy Special Operations. I spent eight years leading elite teams of bomb technicians across the globe in extremely fast-paced and ambiguous environments with a 100% mission success rate."
   const about2 = "After transitioning from the military in 2021, I broke into investment banking as a financial analyst specializing in Tech M&A and advised on 10 projects valued at ~$3.5 billion."
   const about3 = "I decided to move into software development because after learning some basic VBA and Python coding to eliminate a series of manual processes at work, I realized that I really enjoyed designing software programs and loved being the creator of tools that solved real world problems."
