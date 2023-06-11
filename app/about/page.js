@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function About() {
 
   const profilePhoto = "/img/profile_img.jpg"
-  const tagLine = "Bombs -> Banking -> Backend"
+  const tagLine = "Bombs => Banking => Backend"
   const tagLine2 = "Fusing high-stakes leadership, financial acumen, and engineering proficiency to drive breakthrough innovation"
   const about1 = "My name is Harper Foley and I am a full-stack software developer with a background in tech investment banking and Navy Special Operations. I spent eight years leading elite teams of bomb technicians across the globe in extremely fast-paced and ambiguous environments with a 100% mission success rate."
   const about2 = "After transitioning from the military in 2021, I broke into investment banking as a financial analyst specializing in Tech M&A and advised on 10 projects valued at ~$3.5 billion."
@@ -14,6 +14,7 @@ export default function About() {
   return (
     <>
       <h1 className="pt-4 mb-2 text-2xl font-bold text-center text-gray-300 sm:text-4xl">{tagLine}</h1>
+      <h2 className="pt-4 mb-2 text-xl font-bold text-center text-gray-300 sm:text-2xl">{tagLine2}</h2>
       <div className="flex flex-col justify-center sm:flex-row">
         <span className="order-1 bg-slate-200 inline-block mt-3 mx-2 sm:mt-5 sm:mx-auto mb-4 p-1.5 text-center">
           <Image
